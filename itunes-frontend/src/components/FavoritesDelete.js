@@ -7,7 +7,7 @@ function FavoritesDelete(props) {
 
     //We use the DELETE method of the fetch request.
     const deleteButton = () => {
-        fetch('http://localhost:8080/favorites/' + idDelete, {
+        fetch('https://itunes-app-project-backend.onrender.com/favorites/' + idDelete, {
             method: 'DELETE'
         });
     }
