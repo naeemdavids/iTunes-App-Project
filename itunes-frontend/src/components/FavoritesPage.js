@@ -13,7 +13,7 @@ function FavoritesPage() {
 
   //This function receives the data from the data stored in the backend with the fetch request and stores it in the state.
   const getData = () => {
-      fetch('http://localhost:8080/favorites')
+      fetch('https://itunes-app-project-backend.onrender.com/favorites')
       .then(res => res.json())
       .then(data => {
           setFavorites(data);
