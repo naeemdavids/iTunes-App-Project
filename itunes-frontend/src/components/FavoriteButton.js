@@ -5,7 +5,7 @@ function FavoriteButton(props) {
     const [favoritesScan, setFavoritesScan] = useState([]); //Data from the backend is stored in state, this is for scaning items that are already in your favourites list.
     
     useEffect(() => {
-      fetch('http://localhost:8080/favorites')
+      fetch('https://itunes-app-project-backend.onrender.com/favorites')
       .then(res => res.json())
       .then(data => {
         setFavoritesScan(data);
@@ -36,7 +36,7 @@ function FavoriteButton(props) {
         alert("This is already in your Favorites List!");
       }
       else{
-        fetch('http://localhost:8080/favorites', {
+        fetch('https://itunes-app-project-backend.onrender.com/favorites', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
