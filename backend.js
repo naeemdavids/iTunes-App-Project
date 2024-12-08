@@ -25,9 +25,9 @@ app.use(cors());
 app.use(helmet());
 
 //Default Values.
-let term = "";
-let entity = "";
-let limit = 10;
+let term = "batman";
+let entity = "movie";
+let limit = 20;
 let resultsGet;
 
 //Gets the search results for the default values to display on the homepage.
